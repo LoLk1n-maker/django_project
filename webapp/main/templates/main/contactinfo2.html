@@ -1,0 +1,49 @@
+{%  load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <script src="{% static 'main/js/main1.js' %}"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мое портфолио</title>
+    <link rel="stylesheet" href="{% static 'main/css/styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Мое портфолио</h1>
+        <div class="profile">
+            <div class="info">
+                <h2>{{ profile.name }}</h2>
+                <p>{{ profile.city }}</p>
+                <form>
+                    <label for="hackathon">Опыт участия в хакатонах:</label>
+                    <input type="text" id="hackathon" value="{{ profile.exp }}">
+
+                    <label for="education">Образование:</label>
+                    <input type="text" id="education" value="{{ profile.edu }}">
+
+                    <label for="email">Моя почта:</label>
+                    <input type="email" id="email" value="{{ profile.mail }}">
+
+                    <label for="phone">Мой телефон:</label>
+                    <input type="tel" id="phone" value="{{ profile.p_num }}">
+
+                    <label for="about">Обо мне:</label>
+                    <input type="about" id="about" value="{{ profile.about }}">
+                    <!--<textarea id="about" ></textarea>-->
+                </form>
+            </div>
+            <div class="image">
+                <img src="{% static 'main/img/profile-picture.jpg' %}" alt="Profile Picture">
+            </div>
+        </div>
+        <div class="buttons">
+            <form action="https://xn--80ajqb5afw.xn--80aa3anexr8c.xn--p1acf/personal/profile/edit" target="_blank">
+                <button>Редактировать профиль</button>
+            </form>
+            <button onclick="findMember()">Разместить резюме</button>
+        </div>
+
+    </div>
+</body>
+</html>

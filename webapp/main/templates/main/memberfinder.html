@@ -1,0 +1,69 @@
+{%  load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме участников</title>
+    <link rel="stylesheet" href="{% static 'main/css/styles1.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Резюме участников</h1>
+        <div class="filter-section">
+            <div class="filter">
+                <label for="stack-filter">Стек</label>
+                <select id="stack-filter">
+                    <option value="all">Все</option>
+                    <option value="frontend">Frontend</option>
+                    <option value="backend">Backend</option>
+                    <option value="fullstack">Fullstack</option>
+                    <!-- Добавьте дополнительные опции здесь -->
+                </select>
+            </div>
+            <div class="filter">
+                <label for="experience-filter">Опыт</label>
+                <select id="experience-filter">
+                    <option value="all">Все</option>
+                    <option value="0-2">0-2 года</option>
+                    <option value="3-5">3-5 лет</option>
+                    <option value="6+">6+ лет</option>
+                </select>
+            </div>
+            <div class="filter">
+                <label for="keyword-filter">Ключевые слова</label>
+                <input type="text" id="keyword-filter" placeholder="Введите ключевые слова">
+            </div>
+            <button onclick="applyFilters()">Применить фильтр</button>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Резюме участников</h1>
+        <div class="resume-cards">
+            <div class="card">
+                <img src="{% static 'main/img/profile-picture.jpg' %}" alt="Profile Picture">
+                <h2>Иван Петров</h2>
+                <p><strong>Город:</strong> Москва</p>
+                <p><strong>Опыт участия в хакатонах:</strong> Мой первый хакатон</p>
+                <p><strong>Образование:</strong> МГУ</p>
+                <p><strong>Моя почта:</strong> rabochiya00@mail.ru</p>
+                <p><strong>Мой телефон:</strong> +7 (999) 888-77-43</p>
+                <p><strong>Обо мне:</strong> Опыт работы 5 лет. Бэк-разработчик, язык Python, Java.</p>
+            </div>
+            <div class="card">
+                <img src="{% static 'main/img/profile2.jpg' %}" alt="Profile Picture">
+                <h2>Анна Смирнова</h2>
+                <p><strong>Город:</strong> Санкт-Петербург</p>
+                <p><strong>Опыт участия в хакатонах:</strong> Hackathon 2023</p>
+                <p><strong>Образование:</strong> СПбГУ</p>
+                <p><strong>Моя почта:</strong> anna@example.com</p>
+                <p><strong>Мой телефон:</strong> +7 (911) 123-45-67</p>
+                <p><strong>Обо мне:</strong> Опыт работы 3 года. Фронтэнд-разработчик, язык JavaScript, React.</p>
+            </div>
+            <!-- Добавьте дополнительные карточки участников здесь -->
+        
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

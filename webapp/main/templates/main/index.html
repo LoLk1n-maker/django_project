@@ -1,0 +1,63 @@
+{%  load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <script src="{% static 'main/js/main1.js' %}"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Команды</title>
+    <link rel="stylesheet" href="{% static 'main/css/styles1.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Команды</h1>
+        <div class="buttons">
+            <button onclick="findTeam()">
+                <img src="{% static 'main/img/icon.png' %}" alt="[]">Найти команду
+            </button>
+            <button onclick="findMember()">
+                <img src="{% static 'main/img/icon.png' %}" alt="[]"> Найти участника
+            </button>
+            <!--тут нормальная кнопка с сылкой на https://xn--80ajqb5afw.xn--80aa3anexr8c.xn--p1acf/personal/team/create-->
+            <form action="https://xn--80ajqb5afw.xn--80aa3anexr8c.xn--p1acf/personal/team/create" target="_blank">
+                <button>
+                    <img src="{% static 'main/img/icon2.png' %}" alt="[]">Создать команду
+                </button>
+            </form>
+        </div>
+        <div class="tab-content" id="all-teams">
+            <p>efewfeewf</p>
+            <h2>Всё команды</h2>
+            <div class="search-filter">
+                <div class="search">
+                    <label for="team-search">Поиск команды</label>
+                    <input type="text" id="team-search" placeholder="Введите название команды">
+                </div>
+                <div class="filter">
+                    <label for="task-filter">Фильтр по задачам</label>
+                    <select id="task-filter">
+                        <option value="all">Все задачи</option>
+                        <!-- Добавьте дополнительные опции фильтра задач здесь -->
+                    </select>
+                </div>
+            </div>
+            <div class="team-list">
+                <div class="team">
+                    <h3>Dream Team</h3>
+                    <p>Задача: не выбрана</p>
+                </div>
+                <div class="team">
+                    <h3>Legacy</h3>
+                    <p>Задача: не выбрана</p>
+                </div>
+                <!-- Добавьте дополнительные команды здесь -->
+            </div>
+        </div>
+        <div class="tab-content" id="invitations" style="display:none;">
+            <h2>Приглашения</h2>
+            <!-- Содержимое для приглашений -->
+
+        </div>
+    </div>
+</body>
+</html>

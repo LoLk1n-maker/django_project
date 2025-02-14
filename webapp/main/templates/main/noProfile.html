@@ -1,0 +1,37 @@
+{%  load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поиск команды</title>
+    <link rel="stylesheet" href="{% static 'main/css/stylesNoProfile.css'%}">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Поиск команды</h1>
+        </div>
+        <div class="content">
+
+            <div class="notification">
+                <span class="icon">❌</span>
+                <p>Привет! Для поиска команды необходимо заполнить профиль.</p>
+            </div>
+            <div class="profile-prompt">
+                <p>Заполни свой профиль, и мы расскажем о тебе другим участникам.</p>
+                <div class="message">
+                    <img src="{% static 'main/img/elon.jpg'%}" alt="Илон Маск">
+                    <div class="message-text">
+                        <p><strong>Илон Маск</strong></p>
+                        <p>Привет! Увидел твое резюме на сайте. Ты нам подходишь)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="buttons">    <form action="https://xn--80ajqb5afw.xn--80aa3anexr8c.xn--p1acf/personal/profile/edit" target="_blank">
+                <button>Редактировать профиль</button>    </form>
+
+        </div>
+    </div>
+</body>
+</html>

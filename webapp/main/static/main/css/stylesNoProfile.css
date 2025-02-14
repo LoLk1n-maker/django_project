@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 80%;
+    max-width: 900px;
+    text-align: center;
+}
+
+.header {
+    background-color: #f0f8ff;
+    padding: 20px;
+}
+
+.header h1 {
+    margin: 0;
+    color: #333;
+}
+
+.content {
+    padding: 20px;
+}
+
+.notification {
+    display: flex;
+    align-items: center;
+    background-color: #ffdddd;
+    border: 1px solid #ffcccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.notification .icon {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #ff0000;
+}
+
+.profile-prompt {
+    margin-bottom: 20px;
+}
+
+.message {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.message img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.message-text {
+    text-align: left;
+}
+
+.edit-profile-button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.edit-profile-button:hover {
+    background-color: #0056b3;
+}
+
+.image {
+    margin-top: 20px;
+    margin-left: 400px;
+}
+
+.image img {
+    width: 100%;
+    border-radius: 5px;
+
+}
